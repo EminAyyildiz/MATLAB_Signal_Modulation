@@ -15,6 +15,3 @@ t = (0:1/fs:((size(message, 1)-1)/fs))';
 t = t(:, ones(1, size(message, 2)));
 % we convert our message to modulated signal using the calculation  
 modulatedSignal = (message) .* cos(2 * pi * fc * t);
-
-
-
